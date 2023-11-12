@@ -1,0 +1,160 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container p span {
+    color: white;
+    font-size: 2rem;
+}
+
+body {
+    background-image: url('./Assets/bg1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 50em;
+    margin: 2em;
+}
+
+.head__section img {
+    display: block;
+    margin: 0 auto;
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.head__section p {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 1.5em;
+    color: rgb(255, 242, 0);
+    text-shadow: #000000 2px 2px 5px;
+    font-weight: bolder;
+}
+
+.social__links ul li {
+
+    width: 100%;
+    margin: 1.3rem 0;
+    padding: 0.1rem 0.8rem;
+    background: rgba(255, 255, 255, 0.31);
+    backdrop-filter: blur(0px);
+    border-radius: 5px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    box-shadow: 0 0 0.8rem rgba(255, 255, 255, .12);
+}
+
+.js-tilt-glare {
+    border-radius: 5px;
+}
+
+.social__links ul li a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #ffff;
+    font-size: 1rem;
+    text-shadow: #000000 3px 2px 3px;
+
+}
+
+.social__links ul li a i {
+    text-align: center;
+    line-height: 4rem;
+    padding: 10px 20px;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);
+    transform: scale(1.4) translateZ(50px);
+    transition: 0.25s;
+}
+
+.social__links ul li a span {
+    line-height: 1.4rem;
+}
+
+.social__links ul .instagram:hover {
+    background: #fd49af;
+}
+
+.social__links ul .youtube:hover {
+    background: #FF0000;
+}
+
+.social__links ul .github:hover {
+    background: #333;
+}
+
+.social__links ul .linkedin-twitter:hover {
+    background: #0e93ff;
+}
+
+.social__links ul .portfolio:hover {
+    background: #e91a1a;
+}
+
+/* Media query */
+
+
+/* @media only screen and (max-width: 549px) {
+    .container{
+        width: 88vw;
+    }
+  } */
+
+@media (max-width: 880px) {
+    .container {
+        width: 28em;
+
+    }
+
+    .social__links ul li a {
+        font-size: 13px;
+    }
+
+    .social__links ul li a i {
+        font-size: 21px;
+    }
+
+    .social__links ul li a i {
+        padding: 1px 18px 1px 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        width: 20em;
+    }
+
+    .social__links ul li a i {
+        padding: 0px 18px 0px 10px;
+    }
+}
+
+@media (max-width: 370px) {
+    .container {
+        width: 17em;
+    }
+
+    .social__links ul li a i {
+        padding: 0px 13px 0px 5px;
+    }
+}
